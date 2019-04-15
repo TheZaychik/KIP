@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+// сложение разных типов 
 class ClassA{
 public:
     double x;
