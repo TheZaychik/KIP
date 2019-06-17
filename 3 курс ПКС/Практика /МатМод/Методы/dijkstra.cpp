@@ -1,9 +1,9 @@
 #include <iostream>
 
 using namespace std;
-const int intmax = 99999999;
+const int intmax = 99999999; // ну просто что то плюсовые константы не оч хотят работать
 const int intmin = -99999999;
-const int V = 8;
+const int V = 8; // кол-во вершин
 
 void Dijkstra(int graph[V][V], int st) {
     int min_distance[V], max_distance[V], count, index, i, u, m = st + 1;
