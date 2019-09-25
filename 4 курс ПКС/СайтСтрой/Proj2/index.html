@@ -53,6 +53,8 @@
                 <a href="about.html" style="padding: 3px">О Нас</a>
                 <el style="padding: 3px">|</el>
                 <a href="multimedia.html" style="padding: 3px">Мультимедиа</a>
+                <el style="padding: 3px">|</el>
+                <a href="js.html" style="padding: 3px">ЖабаСкрипт</a>
             </nav>
         </div>
     </div>
@@ -123,9 +125,17 @@
         </div>
         <div class="col-xl-3">
             <aside class="card text-white bg-secondary hei" style="padding: 5px; height: 100%">
-                <p>Что то тут происходит....</p>
-                <p>Но что?</p>
-                <p>Непонятно...</p>
+                <form action="login.php" method="post">
+                    <div class="form-group">
+                        <label for="login">Логин</label>
+                        <input name="login" type="text" id="login" class="form-control" placeholder="VanekTheUser">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Пароль</label>
+                        <input name="password" type="password" id="password" class="form-control" placeholder="Qwerty1234">
+                    </div>
+                    <button type="submit" class="btn btn-info">Вход</button>
+                </form>
             </aside>
         </div>
     </div>
@@ -166,7 +176,11 @@
             </div>
         </div>
     </div>
-    <div class="row"></div>
+    <div class="row d-flex justify-content-center" style="padding-bottom: 10px">
+        <div class="col-xl-5">
+
+        </div>
+    </div>
 </div>
 
 </body>

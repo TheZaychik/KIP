@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style>
+        html {
+            background-color: orange;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            background-color: white;
+            border-radius: 3px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row row_margin">
+        <div class="col-xl-12 d-flex justify-content-center">
+            <h1 class="title">My Blog</h1>
+        </div>
+        <div class="col-xl-12 d-flex justify-content-center">
+            <nav class="navbar">
+                <a href="index.html" style="padding: 3px">Главная</a>
+                <el style="padding: 3px">|</el>
+                <a href="multimedia.html" style="padding: 3px">Мультимедиа</a>
+                <el style="padding: 3px">|</el>
+                <a href="about.html" style="padding: 3px">О Нас</a>
+            </nav>
+        </div>
+    </div>
+    <div class="row row_margin d-flex justify-content-center">
+        <div class="col-xl-7">
+            <ul>
+                <li id="l1"></li>
+                <li id="l2"></li>
+            </ul>
+            <span></span>
+        </div>
+    </div>
+</div>
+<script>
+    document.getElementById("l1").innerText = "Лес — часть поверхности Земного шара, покрытая древесными растениями.";
+    document.getElementById("l2").innerText = "В настоящее время леса занимают около трети площади суши.";
+   // alert("Площадь леса в России составляет 8 млн кв.км.");
+</script>
+<script src="js/secret.js"></script>
+<script src="js/secret2.js"></script>
+</body>
+</html>
