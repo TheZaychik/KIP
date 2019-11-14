@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLServer", "SQLServer\SQLServer.csproj", "{C78B0D46-89BD-41F8-BBC8-90C1A5CB9E5C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C78B0D46-89BD-41F8-BBC8-90C1A5CB9E5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C78B0D46-89BD-41F8-BBC8-90C1A5CB9E5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C78B0D46-89BD-41F8-BBC8-90C1A5CB9E5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C78B0D46-89BD-41F8-BBC8-90C1A5CB9E5C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
