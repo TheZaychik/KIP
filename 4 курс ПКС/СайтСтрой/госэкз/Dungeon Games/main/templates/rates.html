@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    <title>Топ игроков</title>
+{% endblock %}
+{% block content %}
+    <div class="container col-xl-5">
+        <h5>Топ игроков по очкам:</h5>
+        {% for s in scoreList %}
+            <div class="alert alert-info">
+                {{ s|safe }}
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

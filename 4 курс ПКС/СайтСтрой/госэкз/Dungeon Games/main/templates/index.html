@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div style="text-align: center;">
+        <h1>Онлайн игра "Рыцари и Драконы"</h1>
+        <a class="btn btn-primary" href="{% url 'main:home' %}">Начать играть</a>
+    </div>
+    <div style="text-align: center; margin-top: 50px">
+        <h3>Управление:</h3>
+        <p>Cтрелки на клавиатуре - управление героем</p>
+        <p>Пробел - удар</p>
+        <p>Shift - пауза</p>
+    </div>
+{% endblock %}

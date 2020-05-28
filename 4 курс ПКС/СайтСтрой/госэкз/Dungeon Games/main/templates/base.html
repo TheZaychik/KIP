@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+        <title>K&D:DM</title>
+    {% endblock %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-grid.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-reboot.css' %}">
+    {% block head %}
+    {% endblock %}
+</head>
+<body>
+<header class="card-header" style="display: flex; align-items: center; ">
+    <div class="d-flex bd-highlight" style="width: 100%; align-items: center">
+        <div class="p-2 flex-grow-1 bd-highlight"><a class="" href="{% url 'main:index' %}"
+                                                     style=" display: flex; align-items: center; font-size: 20px">Knights and Dragons: Dungeon Master</a></div>
+        <div class="p-2 bd-highlight"><a href="{% url 'main:rates' %}">Таблица результатов</a></div>
+        {% if request.user.is_authenticated %}
+            <div class="p-2 bd-highlight">{{ request.user.username }}</div>
+            <div class="p-2 bd-highlight"><a href="{% url 'main:log_out' %}">Выйти</a></div>
+        {% else %}
+            <div class="p-2 bd-highlight"><a href="{% url 'main:auth' %}">Войти</a></div>
+            <div class="p-2 bd-highlight"><a href="{% url 'main:register' %}">Регистрация</a></div>
+        {% endif %}
+    </div>
+</header>
+<div class="container" style="margin-top: 25px">
+    {% block content %}
+
+    {% endblock %}
+</div>
+
+<footer class="card-footer" style="display: flex; justify-content: center; position: absolute; bottom: 0; width: 100%">
+    <p>(c) 2019 Dungeon Games Inc. All rights belongs to <a href="http://www.fa.ru/org/spo/kip/Pages/Home.aspx">KIP</a>
+    </p>
+</footer>
+<script type="javascript" src="{% static 'js/index.js' %}"></script>
+<script src="{% static 'js/bootstrap.js' %}"></script>
+<script src="{% static 'js/bootstrap.bundle.js' %}"></script>
+</body>
+</html>
