@@ -24,6 +24,8 @@
 * [AlexeyChernikov/KIP](https://github.com/AlexeyChernikov/KIP)
 * [GeorgiyDemo/KIP](https://github.com/GeorgiyDemo/KIP)
 
+* [TheZaychik/FA](https://github.com/TheZaychik/FA) - репо Финашки, факультет ИТиАБД
+
 *Колледж информатики и программирования Финансового университета при Правительстве РФ aka Колледж информатики и программирования (КИП Финуниверситета, бывш. Колледж информатики и электронной техники, МГКИЭТ, МГКИП) aka Кембридж на Кронштадтском aka [шорага.рф](https://шорага.рф) aka КИПФИН
 
 З.Ы. README.md украл у Демки, да))0)
