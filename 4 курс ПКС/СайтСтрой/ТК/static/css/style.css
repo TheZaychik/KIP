@@ -1,0 +1,202 @@
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    padding-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footerContent{
+    padding: 5px;
+    display: flex;
+    border: blue 3px solid;
+    border-radius: 3px;
+    width: 80%;
+    flex-direction: column;
+
+}
+
+.nav {
+    display: flex;
+    border: blue 3px solid;
+    border-radius: 3px;
+    width: 80%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+
+ul.menu > li {
+    float: left;
+    position: relative;
+}
+
+ul.menu > li > a {
+    display: block;
+    padding: 10px;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+}
+
+ul.menu > li > a:hover {
+    background-color: blue;
+    color: white;
+}
+
+ul.submenu {
+    display: none;
+    position: absolute;
+    width: 120px;
+    top: 37px;
+    left: 0;
+    background-color: blue;
+    border: 1px solid blue;
+}
+
+ul.submenu > li {
+    display: block;
+}
+
+ul.submenu > li > a {
+    display: block;
+    padding: 10px;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+}
+
+ul.submenu > li > a:hover {
+    text-decoration: underline;
+}
+
+ul.menu > li:hover > ul.submenu {
+    display: block;
+}
+
+#wrapper {
+    margin: 50px auto;
+    width: 673px;
+}
+
+#container {
+    height: 235px;
+    padding: 32px;
+    position: relative;
+}
+
+.sliderbutton {
+    cursor: pointer;
+    float: left;
+    height: 235px;
+    width: 25px;
+}
+
+#slideleft {
+    background: url('../../static/img/silder/icons.gif') -50px -265px no-repeat;
+}
+
+#slideleft:hover {
+    background-position: -0 -265px;
+}
+
+#slideright {
+    background: url('../../static/img/silder/icons.gif') 0 90px no-repeat;
+}
+
+#slideright:hover {
+    background-position: -50px 90px;
+}
+
+#slider {
+    float: left;
+    height: 235px;
+    overflow: auto;
+    position: relative;
+    width: 558px;
+}
+
+#slider ul {
+    left: 0;
+    list-style: none;
+    position: absolute;
+    top: 0;
+}
+
+#slider li {
+    float: left;
+    height: 235px;
+    width: 558px;
+}
+
+.pagination {
+    height: 25px;
+    list-style: none;
+    position: absolute;
+    right: 61px;
+    top: 40px;
+}
+
+.pagination li {
+    background: #ccc;
+    border: 1px solid #fff;
+    cursor: pointer;
+    float: left;
+    height: 8px;
+    margin: 0 4px 0 0;
+    width: 8px;
+}
+
+.pagination li:hover, li.current {
+    background: #fff;
+}
+
+.aside {
+    position: absolute;
+    top: 522px;
+    right: 290px;
+    display: flex;
+    border: blue 3px solid;
+    border-radius: 3px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.postContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.post {
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+    border: blue 3px solid;
+    border-radius: 3px;
+    width: 40%;
+}

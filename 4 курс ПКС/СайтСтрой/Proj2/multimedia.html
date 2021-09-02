@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <title>My Blog</title>
+    <style>
+        html {
+            background-color: orange;
+        }
+
+        .videobox {
+            padding: 5px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .video {
+            border: 1px darkblue solid;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background-color: indianred;
+            border-radius: 15px;
+            width: 920px;
+        }
+
+        .musicbox {
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .music {
+            border: 1px darkblue solid;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: mediumaquamarine;
+            border-radius: 15px;
+            width: 920px;
+        }
+    </style>
+</head>
+<body>
+<div style="margin-left: auto; margin-right: auto; width: 920px">
+    <header>
+        <h1 style="text-align: center">My Blog</h1>
+    </header>
+    <nav style="display: flex; justify-content: center; flex-direction: row;">
+        <a href="index.html" style="padding: 3px">Главная</a>
+        <el style="padding: 3px">|</el>
+        <a href="about.html" style="padding: 3px">О Нас</a>
+        <el style="padding: 3px">|</el>
+        <a href="js.html" style="padding: 3px">ЖабаСкрипт</a>
+    </nav>
+</div>
+<div class="videobox">
+    <div class="video">
+        <video src="source/video/video1.mp4" style="padding: 5px; height: 300px" controls></video>
+        <video src="source/video/video2.mp4" style="padding: 5px; height: 300px; width: 200px" controls></video>
+    </div>
+</div>
+<div class="musicbox">
+    <div class="music">
+        <audio src="source/music/Todd_Howard.mp3" style="padding: 5px" controls></audio>
+        <audio src="source/music/Heads_Will_Roll.mp3" style="padding: 5px" controls></audio>
+    </div>
+</div>
+</body>
+<script src="js/bootstrap.js"></script>
+</html>

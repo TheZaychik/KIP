@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <title>Библиотека</title>
+</head>
+<body>
+<div class="page_container">
+    <div class="form_container">
+        <h4>Библиотека</h4>
+        <form class="form" method="post" action="form.php">
+            <div>
+                <label>Название Книги</label>
+                <input type="text" name="name">
+            </div>
+            <div style="padding-top: 15px">
+                <label>Жанр</label>
+                <input name="genre" type="radio" value="Стихи" checked>Стихи
+                <input name="genre" type="radio" value="Cказки">Cказки
+                <input name="genre" type="radio" value="Проза">Проза
+            </div>
+            <div style="display:flex; flex-direction: column; padding-top: 15px">
+                <label>Свойства</label>
+                <div>
+                    <input name="Illustrations" type="checkbox" value="1" checked/>Иллюстрации
+                    <input name="HardCover" type="checkbox" value="1"/>Тв. переплет
+                    <input name="ForChildren" type="checkbox" value="1"/>Для детей
+                </div>
+            </div>
+            <div style="display:flex; padding-top: 15px">
+                <button type="submit">Добавить книгу</button>
+            </div>
+        </form>
+        <form method="post" action="print.php">
+            <button type="submit">Распечатать базу</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+    <script type="text/javascript" src="{% static 'js/phaser.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/game.js' %}"></script>
+    <style>
+    </style>
+{% endblock %}
+{% block content %}
+    <div class="container" style="display: flex">
+        <h2>Имя игрока: {{ username }}</h2>
+        <form method="post" style="margin-left: 50px">
+            {% csrf_token %}
+            <input id="score" name="score" type="text" style="display: none">
+            <button type="submit" class="btn btn-primary">Restart</button>
+        </form>
+    </div>
+    <div class="container" style="display: flex; justify-content: center">
+        <div id="game_div">
+
+        </div>
+    </div>
+{% endblock %}

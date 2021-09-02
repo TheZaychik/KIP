@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ТК Зайцев 4ПКС-116</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+<header class="header">
+    <nav class="nav">
+        <ul class="menu">
+            <li><a href=#>Главная</a>
+            <li><a href=#>Статьи</a>
+                <ul class="submenu">
+                    <li><a href=#>Статья</a></li>
+                    <li><a href=#>Статья по JS</a></li>
+                    <li><a href=#>Sudmenu 1</a></li>
+                </ul>
+            </li>
+            <li><a href=#>Контакты</a>
+        </ul>
+    </nav>
+    <nav class="nav" style="border-top: 0">
+        <h1>Текущий Контроль</h1>
+    </nav>
+</header>
+<div>
+    <nav class="aside">
+        <ul class="menu" style="display: flex; flex-direction: column;">
+            <li><a href=#>Главная</a>
+            <li><a href=#>Статьи</a>
+                <ul class="submenu" style="position: static; width: 89px; border-right: 0; border-left: 0;">
+                    <li><a href=#>Статья</a></li>
+                    <li><a href=#>Статья по JS</a></li>
+                    <li><a href=#>Статья по PHP</a></li>
+                </ul>
+            </li>
+            <li><a href=#>Контакты</a>
+        </ul>
+    </nav>
+    <div id="wrapper">
+        <div id="container">
+            <div class="sliderbutton" id="slideleft" onclick="slideshow.move(-1)"></div>
+            <div id="slider">
+                <ul>
+                    <li><img src="static/img/photos/1.jpg" width="558" height="235" alt="Первое фото"/></li>
+                    <li><img src="static/img/photos/2.jpg" width="558" height="235" alt="Второе фото"/></li>
+                    <li><img src="static/img/photos/3.jpg" width="558" height="235" alt="Третье фото"/></li>
+                    <li><img src="static/img/photos/4.jpg" width="558" height="235" alt="Четвертое фото"/></li>
+                    <li><img src="static/img/photos/5.jpg" width="558" height="235" alt="Пятое фото"/></li>
+                </ul>
+            </div>
+            <div class="sliderbutton" id="slideright" onclick="slideshow.move(1)"></div>
+            <ul id="pagination" class="pagination">
+                <li onclick="slideshow.pos(0)"></li>
+                <li onclick="slideshow.pos(1)"></li>
+                <li onclick="slideshow.pos(2)"></li>
+                <li onclick="slideshow.pos(3)"></li>
+                <li onclick="slideshow.pos(4)"></li>
+            </ul>
+        </div>
+    </div>
+    <div class="postContainer">
+        <div class="post">
+            <h4>Задание по JS</h4>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum convallis porttitor leo ut lacinia.
+            Nunc sodales tortor eu est pretium posuere ac vitae ante. Pellentesque interdum lacus ac eleifend
+            vulputate. Nam eget nulla mauris. Suspendisse quam enim, sollicitudin venenatis metus at, lobortis
+            feugiat dolor. Maecenas efficitur, est pellentesque ornare euismod, lectus dolor cursus est, aliquam
+            malesuada nisi elit quis orci. Donec vitae venenatis nulla.
+        </div>
+        <div style="height: 15px"></div>
+        <div class="post">
+            <h4>Задание по PHP</h4>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum convallis porttitor leo ut lacinia.
+            Nunc sodales tortor eu est pretium posuere ac vitae ante. Pellentesque interdum lacus ac eleifend
+            vulputate. Nam eget nulla mauris. Suspendisse quam enim, sollicitudin venenatis metus at, lobortis
+            feugiat dolor. Maecenas efficitur, est pellentesque ornare euismod, lectus dolor cursus est, aliquam
+            malesuada nisi elit quis orci. Donec vitae venenatis nulla.
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="footerContent">
+        <div>
+            Зайцев Н.В. (С) 2019
+        </div>
+        <div>
+            Группа 3ПКС-116
+        </div>
+    </div>
+</footer>
+<script type="text/javascript" src="static/js/jscript.js"></script>
+<script type="text/javascript">
+    var slideshow = new TINY.slider.slide('slideshow', {
+        id: 'slider',
+        auto: 4,
+        resume: false,
+        vertical: false,
+        navid: 'pagination',
+        activeclass: 'current',
+        position: 0,
+        rewind: false,
+        elastic: true,
+        left: 'slideleft',
+        right: 'slideright'
+    });
+</script>
+</body>
+</html>

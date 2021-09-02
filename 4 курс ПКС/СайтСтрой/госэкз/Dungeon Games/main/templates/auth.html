@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}
+    <title>Авторизация</title>
+{% endblock %}
+{% block content %}
+<div class="container col-xl-5">
+    <form method="post">
+        {% csrf_token %}
+        <h5>Авторизация:</h5>
+        <div class="form-group">
+            <label for="LoginFiled">Никнейм:</label>
+            <input id="LoginFiled" class="form-control" name="username" type="text">
+        </div>
+        <div class="form-group">
+            <label for="Password1Filed">Пароль:</label>
+            <input id="Password1Filed" class="form-control" name="password" type="password">
+        </div>
+        <button type="submit" class="btn btn-primary">Войти</button>
+    </form>
+    {% if err %}
+        <div class="alert alert-danger" style="margin-top: 10px">{{ err }}</div>
+    {% endif %}
+</div>
+{% endblock %}
